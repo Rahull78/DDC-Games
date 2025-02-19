@@ -1,26 +1,26 @@
 const frames = [
   {
-    src: "../img-src/kanguva.jpg",
+    src: "./img-src/kanguva.jpg",
     name: "Kanguva",
   },
-  { src: "../img-src/blue_beetle.jpg", name: "Blue Beetle" },
+  { src: "./img-src/blue_beetle.jpg", name: "Blue Beetle" },
   {
-    src: "../img-src/captain_america_brave_new_world.jpg",
+    src: "./img-src/captain_america_brave_new_world.jpg",
     name: "Captain America Brave New World",
   },
-  { src: "../img-src/kalki_2898_ad.jpg", name: "Kalki 2898 AD" },
+  { src: "./img-src/kalki_2898_ad.jpg", name: "Kalki 2898 AD" },
   {
-    src: "../img-src/guardians_of_the_galaxy_vol_3.jpg",
+    src: "./img-src/guardians_of_the_galaxy_vol_3.jpg",
     name: "Guardians of The Galaxy Vol. 3",
   },
-  { src: "../img-src/dune_part_two.jpg", name: "Dune Part 2" },
+  { src: "./img-src/dune_part_two.jpg", name: "Dune Part 2" },
   { src: "../img-src/ponniyin_selvan_2.jpg", name: "Ponniyin Selvan 2 (PS 2)" },
   {
-    src: "../img-src/puss_in_boots_the_last_wish.jpg",
+    src: "./img-src/puss_in_boots_the_last_wish.jpg",
     name: "Puss in boots the last wish",
   },
-  { src: "../img-src/thangalaan.jpg", name: "Thangalaan" },
-  { src: "../img-src/the_dark_knight.jpg", name: "The Dark Knight" },
+  { src: "./img-src/thangalaan.jpg", name: "Thangalaan" },
+  { src: "./img-src/the_dark_knight.jpg", name: "The Dark Knight" },
 ];
 
 let currentFrameIndex = 0;
