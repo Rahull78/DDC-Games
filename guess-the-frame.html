@@ -77,22 +77,22 @@
     </div>
 
     <!-- Scoreboard -->
-    <div id="scoreboard" class="position-fixed bottom-0 end-0 bg-white shadow rounded p-3 m-4 d-none" style="width: 250px">
+    <div id="scoreboard" class="position-fixed bottom-0 end-0 bg-warning shadow rounded p-3 m-4 d-none" style="width: 350px">
       <div class="fw-bold text-center mb-2 fs-5 text-dark">Scoreboard</div>
-      <div class="d-flex justify-content-between align-items-center mt-2">
+      <div class="d-flex justify-content-evenly align-items-center mt-2">
         <span>Suraj</span>
         <span>
-          <button class="btn btn-success btn-sm p-1" onclick="updateScore('suraj', 1)">+</button>
+          <button class="btn btn-success btn-sm px-3" onclick="updateScore('suraj', 1)">+</button>
           <span id="score-suraj">0</span>
-          <button class="btn btn-danger btn-sm p-1" onclick="updateScore('suraj', -1)">−</button>
+          <button class="btn btn-danger btn-sm px-3" onclick="updateScore('suraj', -1)">−</button>
         </span>
       </div>
-      <div class="d-flex justify-content-between align-items-center mt-2">
+      <div class="d-flex justify-content-evenly align-items-center mt-2">
         <span>Yogi</span>
         <span>
-          <button class="btn btn-success btn-sm p-1" onclick="updateScore('yogi', 1)">+</button>
+          <button class="btn btn-success btn-sm px-3" onclick="updateScore('yogi', 1)">+</button>
           <span id="score-yogi">0</span>
-          <button class="btn btn-danger btn-sm p-1" onclick="updateScore('yogi', -1)">−</button>
+          <button class="btn btn-danger btn-sm px-3" onclick="updateScore('yogi', -1)">−</button>
         </span>
       </div>
     </div>
