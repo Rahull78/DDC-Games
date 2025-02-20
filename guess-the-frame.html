@@ -43,11 +43,6 @@
       </div>
     </div>
 
-    <!-- Header -->
-    <header class="container-fluid text-center py-4 bg-primary text-white d-none" id="game-header">
-      <h1 class="fw-bold display-4">Guess the Frame</h1>
-    </header>
-
     <!-- Game Section -->
     <div id="game-container" class="container d-flex flex-column align-items-center text-center py-5 min-vh-100 d-none">
       <h3 class="fw-bold text-dark mb-3">
@@ -59,22 +54,23 @@
         <img
           src="./img-src/image1.png"
           id="movie-frame"
-          class="img-fluid rounded shadow w-100 object-fit-cover"
+          class="img-fluid rounded shadow w-100"
+          style="height: 450px; object-fit: cover;"
           alt="Movie Frame"
         />
       </div>
 
       <!-- Answer Section -->
-      <p id="answer" class="fw-bold text-success fs-4 d-none">
+      <p id="answer" class="fw-bold text-success fs-4 d-none my-3">
         The movie is: <span id="movie-name"></span>
       </p>
 
       <!-- Buttons -->
-      <div class="d-flex gap-5 w-50 mt-5">
-        <button class="btn btn-success btn-lg w-50" onclick="showAnswer()">
+      <div class="d-flex gap-5 w-50 mt-3">
+        <button class="btn btn-success btn-lg w-50 rounded-5" onclick="showAnswer()">
           Show Answer
         </button>
-        <button class="btn btn-primary btn-lg w-50" id="next-frame-btn" onclick="nextFrame()">
+        <button class="btn btn-primary btn-lg w-50 rounded-5" id="next-frame-btn" onclick="nextFrame()">
           Next Frame
         </button>
       </div>
@@ -125,7 +121,6 @@
       // Function to start the game after rules modal
       function startGame() {
         document.getElementById("rulesModal").classList.add("d-none");
-        document.getElementById("game-header").classList.remove("d-none");
         document.getElementById("game-container").classList.remove("d-none");
         document.getElementById("scoreboard").classList.remove("d-none");
       }
