@@ -22,15 +22,34 @@
     />
   </head>
   <body class="bg-light">
+    <!-- Rule Box -->
+    <div
+      id="rule-box"
+      class="position-fixed top-50 start-50 translate-middle bg-white p-4 rounded shadow text-center w-50"
+      style="z-index: 1050"
+    >
+      <h2 class="fw-bold text-primary">Game Rules</h2>
+      <p class="text-dark fs-5">
+        1️⃣ A famous movie dialogue will appear on the screen. <br />
+        2️⃣ Guess the movie name based on the dialogue. <br />
+        3️⃣ Click "Show Answer" to reveal the correct movie. <br />
+        4️⃣ Click "Next Dialogue" to get a new challenge. <br />
+        5️⃣ Score points based on correct answers!
+      </p>
+      <button class="btn btn-success btn-lg mt-3" onclick="startGame()">
+        🎬 Start Game
+      </button>
+    </div>
+
     <!-- Header -->
-    <header class="container-fluid text-center py-4 bg-primary text-white">
+    <header class="container-fluid text-center py-4 bg-primary text-white d-none" id="game-header">
       <h1 class="fw-bold display-4">Guess the Movie from Dialogues</h1>
     </header>
 
     <!-- Game Section -->
     <div
       id="game-container"
-      class="container d-flex flex-column align-items-center text-center min-vh-100 py-5"
+      class="container d-flex flex-column align-items-center text-center min-vh-100 py-5 d-none"
     >
       <h3 class="fw-bold text-dark mb-3">
         Can You Guess the Movie from this Dialogue?
@@ -66,64 +85,33 @@
 
     <!-- Scoreboard (Bottom Right) -->
     <div
-      class="position-fixed bottom-0 end-0 bg-white p-3 rounded shadow-sm w-25"
+      class="position-fixed bottom-0 end-0 bg-white shadow rounded p-3 m-3 d-none"
+      id="scoreboard"
+      style="width: 200px"
     >
-      <div class="fw-bold text-center mb-2">Scoreboard</div>
-
-      <div class="d-flex justify-content-between mb-2">
+      <div class="fw-bold text-center mb-2 fs-5 text-dark">Scoreboard</div>
+      <!-- <div class="d-flex justify-content-between align-items-center">
         <span>Abhi</span>
         <span>
-          <button
-            class="btn btn-success btn-sm"
-            onclick="updateScore('abhi', 1)"
-          >
-            +
-          </button>
+          <button class="btn btn-success btn-sm p-1" onclick="updateScore('abhi', 1)">+</button>
           <span id="score-abhi">0</span>
-          <button
-            class="btn btn-danger btn-sm"
-            onclick="updateScore('abhi', -1)"
-          >
-            −
-          </button>
+          <button class="btn btn-danger btn-sm p-1" onclick="updateScore('abhi', -1)">−</button>
         </span>
-      </div>
-
-      <div class="d-flex justify-content-between mb-2">
+      </div> -->
+      <div class="d-flex justify-content-between align-items-center mt-2">
         <span>Suraj</span>
         <span>
-          <button
-            class="btn btn-success btn-sm"
-            onclick="updateScore('suraj', 1)"
-          >
-            +
-          </button>
+          <button class="btn btn-success btn-sm p-1" onclick="updateScore('suraj', 1)">+</button>
           <span id="score-suraj">0</span>
-          <button
-            class="btn btn-danger btn-sm"
-            onclick="updateScore('suraj', -1)"
-          >
-            −
-          </button>
+          <button class="btn btn-danger btn-sm p-1" onclick="updateScore('suraj', -1)">−</button>
         </span>
       </div>
-
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center mt-2">
         <span>Yogi</span>
         <span>
-          <button
-            class="btn btn-success btn-sm"
-            onclick="updateScore('yogi', 1)"
-          >
-            +
-          </button>
+          <button class="btn btn-success btn-sm p-1" onclick="updateScore('yogi', 1)">+</button>
           <span id="score-yogi">0</span>
-          <button
-            class="btn btn-danger btn-sm"
-            onclick="updateScore('yogi', -1)"
-          >
-            −
-          </button>
+          <button class="btn btn-danger btn-sm p-1" onclick="updateScore('yogi', -1)">−</button>
         </span>
       </div>
     </div>
@@ -151,7 +139,17 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- External JavaScript File -->
+    <!-- JavaScript -->
+    <script>
+      function startGame() {
+        document.getElementById("rule-box").classList.add("d-none");
+        document.getElementById("game-container").classList.remove("d-none");
+        document.getElementById("game-header").classList.remove("d-none");
+        document.getElementById("scoreboard").classList.remove("d-none");
+      }
+    </script>
+
+    <!-- External JavaScript -->
     <script src="./guess-the-movie-from-dialogues.js"></script>
   </body>
 </html>

@@ -1,113 +1,29 @@
-// const frames = [
-//   {
-//     src: "./img-src/kanguva.jpg",
-//     name: "Kanguva",
-//   },
-//   { src: "./img-src/blue_beetle.jpg", name: "Blue Beetle" },
-//   {
-//     src: "./img-src/captain_america_brave_new_world.jpg",
-//     name: "Captain America Brave New World",
-//   },
-//   { src: "./img-src/kalki_2898_ad.jpg", name: "Kalki 2898 AD" },
-//   {
-//     src: "./img-src/guardians_of_the_galaxy_vol_3.jpg",
-//     name: "Guardians of The Galaxy Vol. 3",
-//   },
-//   { src: "./img-src/dune_part_two.jpg", name: "Dune Part 2" },
-//   { src: "../img-src/ponniyin_selvan_2.jpg", name: "Ponniyin Selvan 2 (PS 2)" },
-//   {
-//     src: "./img-src/puss_in_boots_the_last_wish.jpg",
-//     name: "Puss in boots the last wish",
-//   },
-//   { src: "./img-src/thangalaan.jpg", name: "Thangalaan" },
-//   { src: "./img-src/the_dark_knight.jpg", name: "The Dark Knight" },
-// ];
-
-// let currentFrameIndex = 0;
-
-// function showAnswer() {
-//   document.getElementById("answer").classList.remove("d-none");
-//   document.getElementById("movie-name").textContent =
-//     frames[currentFrameIndex].name;
-// }
-
-// function nextFrame() {
-//   currentFrameIndex++;
-//   if (currentFrameIndex < frames.length) {
-//     document.getElementById("movie-frame").src = frames[currentFrameIndex].src;
-//     document.getElementById("answer").classList.add("d-none");
-//     if (currentFrameIndex === frames.length - 1) {
-//       document.getElementById("next-frame-btn").textContent = "View Score";
-//     }
-//   } else {
-//     document.getElementById("game-container").classList.add("d-none");
-//     document.querySelector(".position-fixed").classList.add("d-none");
-//     showFinalScores();
-//   }
-// }
-
-// function showFinalScores() {
-//   const players = ["abhi", "suraj", "yogi"];
-//   const scoreTableBody = document.getElementById("score-table-body");
-//   scoreTableBody.innerHTML = "";
-
-//   // Fetch scores and store them as objects
-//   let scores = players.map((player) => ({
-//     name: player.charAt(0).toUpperCase() + player.slice(1),
-//     score: parseInt(localStorage.getItem(`score-${player}`) || "0"),
-//   }));
-
-//   // Sort scores in descending order
-//   scores.sort((a, b) => b.score - a.score);
-
-//   // Display sorted scores in table
-//   scores.forEach((player) => {
-//     scoreTableBody.innerHTML += `<tr><td>${player.name}</td><td>${player.score}</td></tr>`;
-//   });
-
-//   document.getElementById("final-scoreboard").classList.remove("d-none");
-// }
-
-// function restartGame() {
-//   window.location.href = "index.html";
-// }
-
-// function resetScores() {
-//   ["abhi", "suraj", "yogi"].forEach((player) => {
-//     localStorage.setItem(`score-${player}`, "0");
-//     document.getElementById(`score-${player}`).textContent = "0";
-//   });
-// }
-
-// function updateScore(player, change) {
-//   let score = parseInt(localStorage.getItem(`score-${player}`) || "0") + change;
-//   score = Math.max(0, score);
-//   localStorage.setItem(`score-${player}`, score);
-//   document.getElementById(`score-${player}`).textContent = score;
-// }
-
-// window.onload = resetScores;
-
 const frames = [
-  { src: "./img-src/kanguva.jpg", name: "Kanguva" },
-  { src: "./img-src/blue_beetle.jpg", name: "Blue Beetle" },
-  {
-    src: "./img-src/captain_america_brave_new_world.jpg",
-    name: "Captain America Brave New World",
-  },
-  { src: "./img-src/kalki_2898_ad.jpg", name: "Kalki 2898 AD" },
-  {
-    src: "./img-src/guardians_of_the_galaxy_vol_3.jpg",
-    name: "Guardians of The Galaxy Vol. 3",
-  },
-  { src: "./img-src/dune_part_two.jpg", name: "Dune Part 2" },
-  { src: "./img-src/ponniyin_selvan_2.jpg", name: "Ponniyin Selvan 2 (PS 2)" },
-  {
-    src: "./img-src/puss_in_boots_the_last_wish.jpg",
-    name: "Puss in boots the last wish",
-  },
-  { src: "./img-src/thangalaan.jpg", name: "Thangalaan" },
-  { src: "./img-src/the_dark_knight.jpg", name: "The Dark Knight" },
+  { src: "./img-src/image1.png", name: "Stree 2: Sarkate Ka Aatank" },
+  { src: "./img-src/image2.png", name: "Animal" },
+  { src: "./img-src/image3.png", name: "Gangs of Wasseypur - Part 1" },
+  { src: "./img-src/image4.png", name: "Goliyon Ki Raasleela Ram-Leela" },
+  { src: "./img-src/image5.png", name: "Madgaon Express" },
+  { src: "./img-src/image6.png", name: "Tamasha" },
+  { src: "./img-src/image7.png", name: "The Substance" },
+  { src: "./img-src/image8.png", name: "Marco" },
+  { src: "./img-src/image9.png", name: "Sanam Teri Kasam" },
+  { src: "./img-src/image10.png", name: "Pushpa 2: The Rule" },
+  { src: "./img-src/image11.png", name: "Game Changer" },
+  { src: "./img-src/image12.png", name: "Sookshmadarshini" },
+  { src: "./img-src/image13.png", name: "Baby John" },
+  { src: "./img-src/image14.png", name: "Lucky Baskhar" },
+  { src: "./img-src/image15.png", name: "Martin/ Mortein / Fartin" },
+  { src: "./img-src/image16.png", name: "Devara: Part 1" },
+  { src: "./img-src/image17.png", name: "Vettaiyan" },
+  { src: "./img-src/image18.png", name: "Munjya" },
+  { src: "./img-src/image19.png", name: "Kalki 2898 AD" },
+  { src: "./img-src/image20.png", name: "Aavesham" },
+  { src: "./img-src/image21.png", name: "Bade Miyan Chote Miyan" },
+  { src: "./img-src/image22.png", name: "Maidaan" },
+  { src: "./img-src/image23.png", name: "Manjummel Boys" },
+  { src: "./img-src/image24.png", name: "Shaitaan" },
+  { src: "./img-src/image25.png", name: "Tiger 3" },
 ];
 
 let currentFrameIndex = 0;
@@ -160,7 +76,7 @@ function nextFrame() {
 
 // Display the final scores at the end
 function showFinalScores() {
-  const players = ["abhi", "suraj", "yogi"];
+  const players = ["suraj", "yogi"];
   const scoreTableBody = document.getElementById("score-table-body");
   scoreTableBody.innerHTML = "";
 
@@ -188,7 +104,7 @@ function restartGame() {
 
 // Reset scores at the start of the game
 function resetScores() {
-  ["abhi", "suraj", "yogi"].forEach((player) => {
+  ["suraj", "yogi"].forEach((player) => {
     localStorage.setItem(`score-${player}`, "0");
     document.getElementById(`score-${player}`).textContent = "0";
   });
